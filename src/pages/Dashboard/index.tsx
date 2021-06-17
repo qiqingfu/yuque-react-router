@@ -18,7 +18,7 @@ const Dashboard: FC = () => {
         <Col span={4}>
           <Sidebar />
         </Col>
-        <Col span={19} offset={1}>
+        <Col span={20} className="content">
           <Switch>
             <Route exact path="/dashboard" component={Documents} />
             <Route path="/dashboard/notes" component={Notes} />

@@ -28,11 +28,20 @@ const Sidebar: FC = () => {
           return (
             <li key={bar.id}>
               {bar.to === "/dashboard" ? (
-                <NavLink exact to={bar.to} activeClassName="active">
+                <NavLink
+                  className="a-link"
+                  exact
+                  to={bar.to}
+                  activeClassName="active"
+                >
                   {bar.title}
                 </NavLink>
               ) : (
-                <NavLink to={bar.to} activeClassName="active">
+                <NavLink
+                  className="a-link"
+                  to={bar.to}
+                  activeClassName="active"
+                >
                   {bar.title}
                 </NavLink>
               )}

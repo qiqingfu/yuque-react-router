@@ -1,6 +1,8 @@
 import React, { FC } from "react";
-import { Row, Col, Space, Tag } from "antd";
-import { NavLink } from "react-router-dom";
+import { Row, Col } from "antd";
+import Logo from "./Logo";
+import Nav from "./Nav";
+import Operation from "./Operation";
 import "./index.less";
 
 const Header: FC = () => {
@@ -8,29 +10,15 @@ const Header: FC = () => {
     <div className="home-header-container">
       <Row>
         <Col span={2} offset={1}>
-          语雀
+          <Logo />
         </Col>
         <Col span={21}>
           <Row className="nav">
-            <Col offset={4}>
-              <Space size={34}>
-                <NavLink className="a-link" to="/dashboard">
-                  首页
-                </NavLink>
-                <NavLink className="a-link" to="/r">
-                  <Space size={2}>
-                    空间<Tag color="#87d068">暂无配置</Tag>
-                  </Space>
-                </NavLink>
-                <NavLink className="a-link" to="/about">
-                  帮助
-                </NavLink>
-                <NavLink className="a-link" to="/yuque">
-                  <Space size={2}>
-                    反馈<Tag color="#87d068">暂无配置</Tag>
-                  </Space>
-                </NavLink>
-              </Space>
+            <Col offset={4} span={16}>
+              <Nav />
+            </Col>
+            <Col span={4}>
+              <Operation />
             </Col>
           </Row>
         </Col>

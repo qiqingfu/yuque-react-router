@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Avatar, Dropdown, Space, Menu, Divider } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import "./index.less";
@@ -6,7 +7,9 @@ import "./index.less";
 export default function UserAvatar() {
   const menu = (
     <Menu style={{ width: "260px", overflow: "auto" }}>
-      <Menu.Item key="1">个人主页</Menu.Item>
+      <Menu.Item key="1">
+        <Link to="/qiqingfu">个人主页</Link>
+      </Menu.Item>
       <Menu.Item key="2">账户设置</Menu.Item>
       <Divider style={{ margin: 0 }} />
       <Menu.Item key="3">在企业中使用语雀</Menu.Item>

@@ -1,13 +1,24 @@
 import React from "react";
-import { Avatar, Dropdown, Space, Menu } from "antd";
+import { Avatar, Dropdown, Space, Menu, Divider } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import "./index.less";
 
 export default function UserAvatar() {
   const menu = (
-    <Menu style={{ width: "260px" }}>
-      <Menu.Item key="1">123</Menu.Item>
-      <Menu.Item key="2">456</Menu.Item>
+    <Menu style={{ width: "260px", height: "320px", overflow: "auto" }}>
+      <Menu.Item key="1">
+        <strong>123</strong>
+      </Menu.Item>
+      <Divider />
+      <Menu.Item key="2">
+        <div>456</div>
+        <div>789</div>
+      </Menu.Item>
+      <Divider />
+      <Menu.Item key="3">
+        <div>101112</div>
+        <div>131415</div>
+      </Menu.Item>
     </Menu>
   );
 

@@ -29,26 +29,6 @@ const Header: FC = () => {
         </Col>
       </Row>
     </FlexHeader>
-    // <div className="home-header-container">
-    //   <Row className="wrapper">
-    //     <Col span={2} offset={1}>
-    //       <Logo />
-    //     </Col>
-    //     <Col span={21}>
-    //       <Row className="nav">
-    //         <Col offset={4} span={12}>
-    //           <Nav />
-    //         </Col>
-    //         <Col span={4}>
-    //           <Operation />
-    //         </Col>
-    //         <Col span={4}>
-    //           <p>User</p>
-    //         </Col>
-    //       </Row>
-    //     </Col>
-    //   </Row>
-    // </div>
   );
 };
 

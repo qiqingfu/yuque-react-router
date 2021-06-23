@@ -16,18 +16,14 @@ const Header: FC = () => {
         </Col>
         <Col span={20} push={2}>
           <Row>
-            <Col span={20}>
+            <Col md={16} xs={0} sm={0}>
               <Nav />
             </Col>
-            <Col span={2}>
-              <Operation />
-            </Col>
-            <Col span={2}>
-              <Row>
-                <Col offset={4}>
-                  <Avatar />
-                </Col>
-              </Row>
+            <Col md={8} xs={24} sm={24}>
+              <div className="action-groups">
+                <Operation />
+                <Avatar />
+              </div>
             </Col>
           </Row>
         </Col>

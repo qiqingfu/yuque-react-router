@@ -5,20 +5,14 @@ import "./index.less";
 
 export default function UserAvatar() {
   const menu = (
-    <Menu style={{ width: "260px", height: "320px", overflow: "auto" }}>
-      <Menu.Item key="1">
-        <strong>123</strong>
-      </Menu.Item>
-      <Divider />
-      <Menu.Item key="2">
-        <div>456</div>
-        <div>789</div>
-      </Menu.Item>
-      <Divider />
-      <Menu.Item key="3">
-        <div>101112</div>
-        <div>131415</div>
-      </Menu.Item>
+    <Menu style={{ width: "260px", overflow: "auto" }}>
+      <Menu.Item key="1">个人主页</Menu.Item>
+      <Menu.Item key="2">账户设置</Menu.Item>
+      <Divider style={{ margin: 0 }} />
+      <Menu.Item key="3">在企业中使用语雀</Menu.Item>
+      <Divider style={{ margin: 0 }} />
+      <Menu.Item key="4">下载桌面客户端</Menu.Item>
+      <Menu.Item key="5">帮助文档</Menu.Item>
     </Menu>
   );
 

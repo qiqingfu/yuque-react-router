@@ -1,1 +1,12 @@
-@import '~antd/dist/antd.less';
+@import "~antd/dist/antd.less";
+
+/**
+  覆盖 antd 一些组件的样式
+*/
+
+// 扩大 MenuItem 组件的 padding 值
+// 源值为 padding: 5px 12px
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  padding: 7px 12px;
+}

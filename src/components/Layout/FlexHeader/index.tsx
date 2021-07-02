@@ -1,9 +1,8 @@
 import React, { FC } from "react";
+import { ILayoutProps } from "@/types/index";
 import "./index.less";
 
-interface IFlexHeaderProps {
-  layout?: "center" | "spread";
-}
+interface IFlexHeaderProps extends ILayoutProps {}
 
 const FlexHeader: FC<IFlexHeaderProps> = ({ children, layout = "spread" }) => {
   return (

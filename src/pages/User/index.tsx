@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import whiteList from "src/config/routeWhiteList";
+import Header from "@/components/Header";
 
 interface IParams {
   username: string;
@@ -19,7 +20,11 @@ const User: FC = () => {
     return null;
   }
 
-  return <div>User</div>;
+  return (
+    <div>
+      <Header layout="center" />
+    </div>
+  );
 };
 
 export default User;

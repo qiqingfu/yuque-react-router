@@ -5,11 +5,14 @@ import Nav from "./Nav";
 import Operation from "./Operation";
 import Avatar from "./Avatar";
 import FlexHeader from "src/components/Layout/FlexHeader";
+import { ILayoutProps } from "@/types/index";
 import "./index.less";
 
-const Header: FC = () => {
+interface IHeaderProps extends ILayoutProps {}
+
+const Header: FC<IHeaderProps> = ({ layout = "spread" }) => {
   return (
-    <FlexHeader>
+    <FlexHeader layout={layout}>
       <Row className="home-header-container">
         <Col span={2}>
           <Logo />

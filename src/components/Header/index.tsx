@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import Operation from "./Operation";
 import Avatar from "./Avatar";
 import FlexHeader from "src/components/Layout/FlexHeader";
-import { ILayoutProps } from "@/types/index";
+import { ILayoutProps } from "src/types/index";
 import "./index.less";
 
 interface IHeaderProps extends ILayoutProps {}

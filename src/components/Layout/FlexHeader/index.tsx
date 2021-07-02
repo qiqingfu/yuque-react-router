@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ILayoutProps } from "@/types/index";
+import { ILayoutProps } from "src/types/index";
 import "./index.less";
 
 interface IFlexHeaderProps extends ILayoutProps {}

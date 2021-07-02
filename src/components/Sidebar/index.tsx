@@ -29,7 +29,7 @@ const Sidebar: FC = () => {
             <li key={bar.id}>
               {bar.to === "/dashboard" ? (
                 <NavLink
-                  className="a-link"
+                  className="q-link"
                   exact
                   to={bar.to}
                   activeClassName="active"
@@ -38,7 +38,7 @@ const Sidebar: FC = () => {
                 </NavLink>
               ) : (
                 <NavLink
-                  className="a-link"
+                  className="q-link"
                   to={bar.to}
                   activeClassName="active"
                 >

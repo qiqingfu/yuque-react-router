@@ -18,10 +18,10 @@ const Explore: FC<RouteChildrenProps> = (props) => {
     <div className="explore-container">
       <div>
         <Space size={32}>
-          <NavLink className="a-link" to={`${url}/events`}>
+          <NavLink className="q-link" to={`${url}/events`}>
             关注
           </NavLink>
-          <NavLink className="a-link" to={`${url}/recommend`}>
+          <NavLink className="q-link" to={`${url}/recommend`}>
             推荐
           </NavLink>
           <Redirect to={`${url}/events`} />
